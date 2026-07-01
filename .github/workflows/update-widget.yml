@@ -21,6 +21,9 @@ jobs:
         with:
           node-version: 22
 
+      - name: Install Dependencies
+        run: npm install
+
       - name: Run Widget Updater
         run: node steam-widget.js
         env:
